@@ -19,8 +19,13 @@ export default function Home() {
       <Pricing />
       <Footer />
 
-      <div className="fixed bottom-6 right-6 z-[9999] pointer-events-none select-none">
-        <div className="bg-black/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-lg shadow-2xl flex flex-col items-end">
+      <a 
+        href="https://growthcraftbysai.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-[9999] pointer-events-auto select-none block group"
+      >
+        <div className="bg-black/80 backdrop-blur-md border border-white/10 px-4 py-2 rounded-lg shadow-2xl flex flex-col items-end transition-all duration-300 transform group-hover:-translate-y-1 group-hover:border-[#a3e635]/40">
           <span className="text-[#a3e635] text-[10px] font-black uppercase tracking-[0.2em] leading-none mb-1">
             Demo Showcase
           </span>
@@ -28,7 +33,7 @@ export default function Home() {
             GrowthCraft <span className="text-zinc-500 text-[10px] lowercase font-normal italic not-uppercase tracking-normal">by</span> Sai
           </h4>
         </div>
-      </div>
+      </a>
     </main>
   );
 }
